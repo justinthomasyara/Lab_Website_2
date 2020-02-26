@@ -69,26 +69,7 @@ function loadStatsPage(){
 
 
 
-function switchPlayers(playerNum)
-{
-   document.getElementById("p_year").innerHTML= players[playerNum].year;  
-   document.getElementById("p_major").innerHTML= players[playerNum].major;
-   document.getElementById("g_played").innerHTML= players[playerNum].games_played;
-   document.getElementById("player_img").src= players[playerNum].img;
-   document.getElementById("player_img").alt= players[playerNum].alt;
-   document.getElementById("p_yards").innerHTML= players[playerNum].pass_yards;
-   document.getElementById("r_yards").innerHTML= players[playerNum].rushing_yards;
-   document.getElementById("rec_yards").innerHTML= players[playerNum].receiving_yards;
-   var pass =Math.floor(players[playerNum].pass_yards/players[playerNum].games_played);
-   var rush =Math.floor(players[playerNum].rushing_yards/players[playerNum].games_played);
-   var rec =Math.floor(players[playerNum].receiving_yards/players[playerNum].games_played);
-   document.getElementById("avg_p_yards").innerHTML= pass;
-   document.getElementById("avg_r_yards").innerHTML= rush;
-    document.getElementById("avg_rec_yards").innerHTML= rec;
 
-
-  
-}
 
 function switchPlayers(playerNum) {
 	var curplayer = players[playerNum];
